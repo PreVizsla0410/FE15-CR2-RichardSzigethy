@@ -1,0 +1,185 @@
+* {
+margin: 0;
+padding: 0;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header {
+background-color: #fff;;
+display: flex;
+justify-content: space-between;
+}
+#search {
+margin: auto 10px;
+max-width: 30%;
+position: relative;
+overflow: hidden;
+}
+input {
+cursor: pointer;
+border: 1px solid #ccc;
+border-radius: 4px;
+max-width: 80%;
+}
+button {
+margin: 0;
+border: none;
+background-color: white;
+}
+nav {
+width: 100%;
+background-color: #fff;
+text-align: center;
+border-top: 1px solid rgb(56, 56, 56);
+border-bottom: 1px solid rgb(56, 56, 56);
+}
+ul li {
+list-style: none;
+display: inline-block;
+line-height: 2vw;
+width: 12%;
+}
+ul li a {
+display: block;
+text-decoration: none; 
+font-size: 10px;
+font-family: arial;
+color: #1e1e1e;
+padding: 3px 10px;
+}
+ul li a:hover {
+color: gray;
+}
+#grid {
+display: grid;
+grid-template-columns: 100%;
+justify-content: center;
+background-color: #fff;
+padding: 5px;
+}
+#grid-item1 {
+background-image: url("https://images.pexels.com/photos/10895948/pexels-photo-10895948.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+background-size: cover;
+}
+#grid-item2 {
+background-image: url("https://images.pexels.com/photos/1543800/pexels-photo-1543800.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+background-size: cover;
+}
+#grid-item3 {
+background-image: url("http://ocdn.eu/images/pulscms/N2M7MDA_/66538297-5795-4ffb-8431-1d66f743f24e.jpeg");
+background-size: cover;
+}
+#grid-item4 {
+background-image: url("https://images.pexels.com/photos/4329782/pexels-photo-4329782.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+background-size: cover;
+}
+#grid-item5 {
+background-image: url("https://images.pexels.com/photos/3082242/pexels-photo-3082242.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+background-size: cover;
+}
+#grid-item6 {
+background-image: url("https://images.pexels.com/photos/4197987/pexels-photo-4197987.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+background-size: cover;
+}
+
+#grid-item7 {
+background-image: url("https://images.pexels.com/photos/2684556/pexels-photo-2684556.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+background-size: cover;
+}
+#grid-item8 {
+background-image: url("https://images.eatsmarter.de/sites/default/files/styles/576x432/public/shakshuka-366127-1.jpg");
+background-size: cover;
+}
+#grid-item9 {
+background-image: url("https://images.pexels.com/photos/1359328/pexels-photo-1359328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+background-size: cover;
+}
+.grid-item {
+margin: 15px;
+width: 85vw;
+height: 70vw;
+object-fit: cover;
+text-align: center;
+display: flex;                   
+flex-direction: column-reverse;     
+}
+p {
+opacity: 0.7;
+background: #fff;
+padding: 3px;
+font-size: 3vw;
+}
+h1 {
+margin: 1vw;
+font-family: 'Montserrat', sans-serif;
+}
+h2 {
+opacity: 0.7;
+font-size: 7vw;
+background: #fff;
+padding: 3px;
+font-size: 3vw;
+}
+footer { 
+border-top: 15px solid #000;
+background-color: black;
+text-align: center;
+clear: both;
+height: 150px;
+border-collapse: collapse;
+}
+footer > nav {
+background-color: black;
+border: none;
+}
+.unten {
+color: white;
+}
+footer > p {
+margin-top: 1vw;
+background-color: black;
+color: white;
+}
+.fa {
+padding: 0.2vw;
+font-size: 2vw;
+width: 4vw;
+text-align: center;
+text-decoration: none;
+margin: 5px 2px;
+color: white;
+}
+  @media screen and (min-width: 480px) {
+  ul li {
+    line-height: 4vw;
+  }
+  ul li a {
+    font-size: 1vw;
+    padding: 0 20px;
+  }
+  p {
+    font-size: 1.5vw;
+  }
+  h2 {
+    font-size: 1.5vw;
+  }
+  .grid-item {
+  width: 20vw;
+  height: 20vw;
+  }
+  #grid {
+    grid-template-columns: 40% 40% 40%;
+    padding: 10px;
+  }
+  #search {
+    min-width: none;
+  }
+}
+@media screen and (min-width: 700px) {
+    #grid {
+        grid-template-columns: 30% 30% 30%;
+        padding: 20px;
+    }
+    #search {
+        min-width: 10%;
+      }
+}
